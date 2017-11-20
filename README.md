@@ -9,5 +9,7 @@
 #plexpy_userhistory.ini contents should be followling lines.
 
 ipaddress="<PLEXYPY IP ADDRESS"
+
 port="PLEXPY Port"
+
 plexpyapi="PLEXPY API"
