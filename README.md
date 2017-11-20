@@ -8,8 +8,8 @@
 #Create a plexpy_userhistory.ini in the same directory as plexpy_userhistory.sh
 #plexpy_userhistory.ini contents should be followling lines.
 
-ipaddress="<PLEXYPY IP ADDRESS"
+ipaddress="<PLEXYPY IP ADDRESS>"
 
-port="PLEXPY Port"
+port="<PLEXPY Port>"
 
-plexpyapi="PLEXPY API"
+plexpyapi="<PLEXPY API>"
