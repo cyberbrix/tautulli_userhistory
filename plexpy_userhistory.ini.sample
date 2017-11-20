@@ -1,0 +1,8 @@
+#Configure the following variables
+
+#input your ip and port
+ipaddress="<PLEXPY IP>"
+port="<PLEXPY Port>"
+
+# Input your PlexPy API key
+plexpyapi="<PLEXPY API KEY>"
