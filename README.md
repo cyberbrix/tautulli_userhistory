@@ -1,5 +1,12 @@
 # plexpy_userhistory
-#A linux bash script to provide user watch history, similiar to plexWatch, for PlexPy. It provdies history for all users for the previous day
+#A linux bash script to provide user watch history, similiar to plexWatch, for PlexPy. It provdies history for all users for the previous day. Only users with activity will be displayed. First movies, then TV episodes.
+
+#output is text, so it can be redirected
+
+#TV shows do not have proper number formatting. Instead of s01e03, it shows as s1e3.
+#After cloning the repository, perform the following:
+#cd plexpy_userhistory/
+#chmod a+x plexpy_userhistory.sh
 
 #Run in bash, requires jq
 
