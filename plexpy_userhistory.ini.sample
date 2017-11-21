@@ -1,4 +1,7 @@
 #Configure the following variables
+#rename to .plexpy_userhistory.ini
+#move to $HOME
+#if diff directory, update script file
 
 #input your ip and port
 ipaddress="<PLEXPY IP>"
