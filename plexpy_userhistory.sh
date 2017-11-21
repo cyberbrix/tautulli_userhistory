@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#change to location if different than below
-configfile="./plexpy_userhistory.ini"
+#change to location if different than below. Should be in user's home directory.
+configfile="~/plexpy_userhistory.ini"
 
 #must have JQ installed
 
