@@ -60,8 +60,7 @@ echo "$d"
 
 
 #inserting movies watched
-echo $watched | jq -r '.response.data.data[] | select(.media_type == "movie") | { show: ( .full_title + " -" + " [" + (.percent_complete|tostring) + "%]" ) } | .[]'
-
+echo $watched | jq -r '.response.data.data[] | select(.media_type == "movie") | { show: ( .full_title + " (" + (.year|tostring) + ")" + " -" + " [" + (.percent_complete|tostring) + "%]" ) } | .[]'
 
 #inserting tv shows watched
 echo $watched | jq -r '.response.data.data[] | select(.media_type == "episode") | { show: ( .full_title + " - s" +(.parent_media_index|tostring) + "e" + (.media_index|tostring) + " [" + (.percent_complete|tostring) + "%]" ) } | .[]'
