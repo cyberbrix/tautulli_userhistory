@@ -4,13 +4,12 @@
 #output is text, so it can be redirected
 #Example output
 #User1
-#Movie1 - [70%]
+#Movie1 (year) - [70%]
 #
-#Show1 - Title - s1e1 [77%]
+#Show1 - Title - s01e01 [77%]
 #
 
-#TV shows do not have proper number formatting. Instead of s01e03, it shows as s1e3.
-#After cloning the repository, perform the following:
+#After cloning the repository, perform the following, if needed
 #cd plexpy_userhistory/
 #chmod a+x plexpy_userhistory.sh
 
