@@ -3,12 +3,13 @@
 
 #output is text, so it can be redirected
 #Example output
+
 #User1
+#
 #Movie1 (year) - [70%]
 #
 #Show1 - Title - s01e01 [77%]
 #
-
 #After cloning the repository, perform the following, if needed
 #cd plexpy_userhistory/
 #chmod a+x plexpy_userhistory.sh
