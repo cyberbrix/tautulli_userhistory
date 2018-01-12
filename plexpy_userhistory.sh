@@ -63,8 +63,9 @@ echo "$d"
 echo $watched | jq -r '.response.data.data[] | select(.media_type == "movie") | { show: ( .full_title + " (" + (.year|tostring) + ")" + " -" + " [" + (.percent_complete|tostring) + "%]" ) } | .[]'
 
 #inserting tv shows watched
-echo $watched | jq -r '.response.data.data[] | select(.media_type == "episode") | { show: ( .full_title + " - s" +(.parent_media_index|tostring) + "e" + (.media_index|tostring) + " [" + (.percent_complete|tostring) + "%]" ) } | .[]' | sed  -E "s/( - s)([0-9])/\10\2/g; s/(e)([0-9])/\10\2/g"
+echo $watched | jq -r '.response.data.data[] | select(.media_type == "episode") | { show: ( .full_title + " - s" +(.parent_media_index|tostring) + "e" + (.media_index|tostring) + " [" + (.percent_complete|tostring) + "%]" ) } | .[]' | sed  -E "s/( - s)([0-9])(e)/\10\2\3/g; s/(e)([0-9])(\s)/\10\2\3/g"
 
+#| sed  -E "s/( - s)([0-9])/\10\2/g; s/(e)([0-9])/\10\2/g"
 echo ""
 fi
 done
