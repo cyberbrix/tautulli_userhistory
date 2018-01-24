@@ -1,5 +1,5 @@
 #!/bin/bash
-#test
+
 #change to location if different than below. Should be in user's home directory.
 configfile="$HOME/.plexpy_userhistory.ini"
 
