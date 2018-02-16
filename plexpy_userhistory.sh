@@ -43,6 +43,8 @@ ids=`curl -s "http://$ipaddress:$port/api/v2?apikey=$plexpyapi&cmd=get_users" | 
 
 #calculates yesterdays date in proper syntax
 yesterday="$(date -d yesterday '+%Y-%m-%d')"
+nothingwatched=0
+
 
 #Checks each user for usage
 for d in $ids
@@ -56,6 +58,7 @@ numtitles=`echo $watched | jq '.response.data.data[].full_title' | wc -l`
 
 if [ $numtitles -gt 0 ]
 then
+nothingwatched=1
 echo "$d"
 
 
@@ -69,3 +72,8 @@ echo $watched | jq -r '.response.data.data[] | select(.media_type == "episode") 
 echo ""
 fi
 done
+
+if [ $nothingwatched -eq 0 ]
+then
+echo "No content viewed on $yesterday"
+fi
