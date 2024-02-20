@@ -1,5 +1,5 @@
 #Configure the following variables
-#rename to .plexpy_userhistory.ini
+#rename to .tautulli_userhistory.ini
 #move to $HOME
 #if diff directory, update script file
 
@@ -7,5 +7,5 @@
 ipaddress="<PLEXPY IP>"
 port="<PLEXPY Port>"
 
-# Input your PlexPy API key
-plexpyapi="<PLEXPY API KEY>"
+# Input your Tautulli API key
+tautulliapi="<PLEXPY API KEY>"
