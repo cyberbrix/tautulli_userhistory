@@ -28,4 +28,4 @@ ipaddress="<PLEXYPY IP ADDRESS>"
 
 port="<PLEXPY Port>"
 
-plexpyapi="<PLEXPY API>"
+tautulliapi="`<tautulli API`>"
