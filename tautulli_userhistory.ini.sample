@@ -4,8 +4,8 @@
 #if diff directory, update script file
 
 #input your ip and port
-ipaddress="<PLEXPY IP>"
-port="<PLEXPY Port>"
+ipaddress="<tautulli IP>"
+port="<tautulli Port>"
 
 # Input your Tautulli API key
-tautulliapi="<PLEXPY API KEY>"
+tautulliapi="<tautulli API KEY>"
