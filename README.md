@@ -22,10 +22,10 @@
 
 #.tautulli_userhistory.ini contents should be followling lines.
 
-httpprotocol="<http or https>"
+httpprotocol="`<http or https`>"
 
-ipaddress="<PLEXYPY IP ADDRESS>"
+ipaddress="`<tautulli IP ADDRESS`>"
 
-port="<PLEXPY Port>"
+port="`<tautulli Port`>"
 
 tautulliapi="`<tautulli API`>"
